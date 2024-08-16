@@ -10968,23 +10968,38 @@ body.boxed-wrapper .why-choose-one__img-1{
   max-width: 55%;
 }
 
-.whatsapp_float {
+.floating-buttons {
   position: fixed;
-  width: 60px;
-  height: 60px;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.whatsapp_float .whatsapp_icon {
-  margin-top: 15px;
+.floating-buttons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #25D366;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.floating-buttons a:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button img,
+.call-button img {
   width: 30px;
   height: 30px;
+}
+
+.call-button {
+  background-color: #34b7f1;
+  /* Call button color */
 }
